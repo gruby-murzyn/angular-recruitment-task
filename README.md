@@ -22,11 +22,11 @@ simple just follow  the following isntructions
 
  #Running front-end side
  
- `cd my-project / movies-client`
+ 1. `cd my-project / movies-client`
  
-` npm install`
+ 2. ` npm install`
 
- `npm start`
+ 3. `npm start`
  
- `Go to http://localhost:4200/`
+ 4. `Go to http://localhost:4200/`
  
