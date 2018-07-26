@@ -1,0 +1,20 @@
+{
+  "name": "myapp",
+  "description": "simple restful api interacting with external api's",
+  "main": "server.js",
+  "authors": [
+    "Geofrey Zellah"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gruby-murzyn/angular-recruitment-task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.2"
+  }
+}

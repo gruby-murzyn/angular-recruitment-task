@@ -1,0 +1,17 @@
+<section>
+  <div class="tabs tabs-style-fillup">
+    <nav>
+      <ul>
+        <li><a href="#section-fillup-1" class="fa fa-home"><span>Home</span></a></li>
+        <li><a [routerLink]="['/movies']" class="fa fa-film"><span>Best Movies 200's</span></a></li>
+        <li><a [routerLink]="['/theatre']" class="fa fa-television"><span>Movies in Theatre</span></a></li>
+        <li><a [routerLink]="['/tvshows']" class="fa fa-video-camera"><span>Tv Shows</span></a></li>
+        <li><a href="#section-fillup-5" class="fa fa-gear"><span>Settings</span></a></li>
+      </ul>
+    </nav>
+  </div><!-- /tabs -->
+</section>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
