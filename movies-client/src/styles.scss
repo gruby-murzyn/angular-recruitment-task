@@ -36,9 +36,28 @@ body {
   color: white;
 }
 
-.mat-sort-header-arrow{
-  color: white
+.movies-list {
+  margin-top: 50px;
+  &_header {
+    color: white;
+    background: #007bff
+  }
+  &_tbheader {
+    color: white;
+    background: deepskyblue;
+  }
+  &_data:nth-child(even) {
+    background-color: skyblue;
+  }
+  &_filter {
+    margin: 20px 0px 20px 0px;
+  }
 }
+
+img {
+  width: 100%;
+}
+
 .mat-form-field {
   font-size: 14px;
   width: 100%;
