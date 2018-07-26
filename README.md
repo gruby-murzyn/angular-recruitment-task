@@ -1,5 +1,9 @@
 # angular-recruitment-task
 simple REST API - a basic app interacting with external API.
+project is created using 
+```
+angular 6, nodejs, expressjs, angular material , bootstrap 4
+```
 
 #Set up the project locally 
 
