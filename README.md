@@ -7,7 +7,7 @@ angular 6, nodejs, expressjs, angular material , bootstrap 4
 
 #Set up the project locally 
 
-simple just follow  the following isntruction
+simple just follow  the following isntructions
 
 
 running server side
