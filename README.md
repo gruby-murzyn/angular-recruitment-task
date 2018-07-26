@@ -1,4 +1,4 @@
-# angular-recruitment-task
+# Angular-recruitment-task
 simple REST API - a basic app interacting with external API.
 project is created using 
 ```
@@ -10,7 +10,7 @@ angular 6, nodejs, expressjs, angular material , bootstrap 4
 simple just follow  the following isntructions
 
 
-running server side
+#Running server side
 
 1. `git clone https://github.com/gruby-murzyn/angular-recruitment-task.git my-project`
 
@@ -20,10 +20,13 @@ running server side
 
 4. `npm run dev`
 
- running front-end side
+ #Running front-end side
  
  `cd my-project / movies-client`
+ 
 ` npm install`
+
  `npm start`
+ 
  `Go to http://localhost:4200/`
  
