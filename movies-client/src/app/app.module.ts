@@ -15,8 +15,8 @@ import {MatTableModule} from '@angular/material/table';
 // tslint:disable-next-line:max-line-length
 import {MatFormFieldModule, MatSortModule, MatInputModule, MatAutocompleteModule, MatBadgeModule, MatBottomSheetModule, MatSelectModule} from '@angular/material';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import { CdkTableModule } from '../../node_modules/@angular/cdk/table';
-import { CdkTreeModule } from '../../node_modules/@angular/cdk/tree';
+import { CdkTableModule } from '@angular/cdk/table';
+import { CdkTreeModule } from '@angular/cdk/tree';
 @NgModule({
   declarations: [
     AppComponent,

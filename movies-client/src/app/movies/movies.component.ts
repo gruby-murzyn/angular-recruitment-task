@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { MoviesService } from '../movies.service';
+import { DataService } from '../data.service';
 import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 
 @Component({
@@ -12,11 +12,11 @@ export class MoviesComponent implements OnInit {
   dataSource: any;
   manualPage = 0;
   localstorageMovies: any;
-  constructor(private moviesService: MoviesService) { }
+  constructor(private dataService: DataService) { }
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   ngOnInit() {
-    this.moviesService.getMovies().subscribe(res => {
+    this.dataService.getMovies().subscribe(res => {
       this.dataSource = new MatTableDataSource(res.results);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;

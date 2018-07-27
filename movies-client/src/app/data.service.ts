@@ -12,7 +12,7 @@ const apiUrl = 'http://localhost:3000/api';
 @Injectable({
   providedIn: 'root'
 })
-export class MoviesService {
+export class DataService {
   theatreUrl = '/theatre';
   moviesUrl = '/movies/';
   tvshowsUrl = '/shows';
