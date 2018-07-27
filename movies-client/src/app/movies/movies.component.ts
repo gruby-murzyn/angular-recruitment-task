@@ -10,21 +10,24 @@ import { MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
 export class MoviesComponent implements OnInit {
   displayedColumns: string[] = ['poster', 'title', 'id', 'release', 'description'];
   dataSource: any;
-  constructor(private moviesService: MoviesService) {
-
-  }
-
+  manualPage = 0;
+  localstorageMovies: any;
+  constructor(private moviesService: MoviesService) { }
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-
   ngOnInit() {
     this.moviesService.getMovies().subscribe(res => {
       this.dataSource = new MatTableDataSource(res.results);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+      this.localstorageMovies = res.results;
+      localStorage.setItem('items', JSON.stringify(this.localstorageMovies.length));
+      const dataMovies = localStorage.getItem('items');
+      console.log(dataMovies);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     });
   }
-
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
 
@@ -32,5 +35,18 @@ export class MoviesComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+  public updateManualPage(index: number): void {
+    this.manualPage = index;
+    this.paginator.pageIndex = index;
+    this.paginator.page.next({
+      pageIndex: this.paginator.pageIndex,
+      pageSize: this.paginator.pageSize,
+      length: this.paginator.length
+    });
+  }
+  public clearManualPage(): void {
+    this.manualPage = 0;
+  }
 }
+
 

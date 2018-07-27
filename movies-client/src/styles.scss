@@ -57,8 +57,22 @@ body {
 img {
   width: 100%;
 }
-
+.mat-sort-header-arrow{
+  color: white !important;
+}
 .mat-form-field {
   font-size: 14px;
+}
+td.mat-cell {
+  padding: 0px 50px 0px 0px !important;
+}
+
+.tv-shows_filter{
   width: 100%;
 }
+.gotoPage {
+    font-size: 14px;
+    display: -webkit-inline-box;
+}
+
+

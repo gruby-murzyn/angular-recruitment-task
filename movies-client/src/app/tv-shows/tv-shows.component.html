@@ -1,10 +1,10 @@
 <div class="card movies-list" id="movies-list">
     <div class="card-header movies-list_header">
-        <h1>Content:  <small>Top TV Shows In The World</small></h1>
+        <h1>Content:  <small class="tv-shows">Top TV Shows In The World</small></h1>
     </div>
     <div class="card-body">
 
-<mat-form-field>
+<mat-form-field class="tv-shows_filter">
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
   </mat-form-field>
   
@@ -48,8 +48,28 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;">
       </tr>
     </table>
-  
-    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  <div class="row pagination">
+    <div class="col page-select">
+      <div class="label gotoPage">Go to page:</div>
+      <mat-form-field>
+          <mat-select [(ngModel)]="manualPage" (ngModelChange)="updateManualPage($event)">
+              <mat-option [value]="1">1</mat-option>
+              <mat-option [value]="2">2</mat-option>
+              <mat-option [value]="3">3</mat-option>
+              <mat-option [value]="4">4</mat-option>
+              <mat-option [value]="5">5</mat-option>
+          </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-auto">
+    <mat-paginator 
+        [pageSize]="5" 
+        [pageIndex]='0'
+        [pageSizeOptions]="[5, 10, 20]" 
+        (page)="clearManualPage()">
+    </mat-paginator>  
+  </div>
+  </div>
   </div>
   </div>
 </div>
