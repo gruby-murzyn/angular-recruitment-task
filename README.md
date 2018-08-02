@@ -1,4 +1,4 @@
-# Angular-recruitment-task
+# Angular-recruitment-task.
 simple REST API - a basic app interacting with external API.
 project is created using 
 ```
