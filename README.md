@@ -10,7 +10,7 @@ angular 6, nodejs, expressjs, angular material , bootstrap 4
 simple just follow  the following isntructions.
 
 
-#Running server side
+#Running server side.
 
 1. `git clone https://github.com/gruby-murzyn/angular-recruitment-task.git my-project`
 
