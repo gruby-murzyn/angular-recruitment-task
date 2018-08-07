@@ -5,7 +5,7 @@ project is created using
 angular 6, nodejs, expressjs, angular material , bootstrap 4
 ```
 
-#Set up the project locally.
+#Set up the project locally
 
 simple just follow  the following isntructions.
 
