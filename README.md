@@ -1,4 +1,4 @@
-# Angular-recruitment-task.
+# Angular Material Data Table .
 simple REST API - a basic app interacting with external API.
 project is created using 
 ```
@@ -12,8 +12,7 @@ simple just follow  the following isntructions.
 
 #Running server side.
 
-1. `git clone https://github.com/gruby-murzyn/angular-recruitment-task.git my-project`
-
+1. `git clone`
 2. `cd my-project`
 
 3. `npm install`
